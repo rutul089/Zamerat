@@ -11,8 +11,8 @@ const purplePayBlue = {
 };
 
 const wotnotColor = {
-  blue: '#2A7CFF',
-  blue: '#2A7CFF',
+  blue: '#00c8fa',
+  // blue: '#00c8fa',
   darkestBlue: '#1a5064',
   lightestBlue: '#cbe8f2',
   skyBlue: '#76BED8',
@@ -111,7 +111,7 @@ const colors = {
   dragable_icon_color: '#E4E4E8',
   checkbox_color: '#0766FE',
   yellow: '#faa404',
-  bubbleBackgroundColor: '#306CFF',
+  bubbleBackgroundColor: '#00c8fa',
 };
 
 export default colors;

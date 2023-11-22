@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "382131013049",
-    "project_id": "wotnot-production",
-    "storage_bucket": "wotnot-production.appspot.com"
+    "project_number": "249728388261",
+    "project_id": "zamerat-chat",
+    "storage_bucket": "zamerat-chat.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:382131013049:android:34298d8264054b27012268",
+        "mobilesdk_app_id": "1:249728388261:android:375b396b18e049ca2c914c",
         "android_client_info": {
-          "package_name": "com.wotnot.wotnot"
+          "package_name": "com.zamerat.zamerat"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "382131013049-6dssr87gp9etk7a12dlghcmhovcdrsjb.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCxpaAbUAbobS08otl8Q6r7bBMw2gVAoQM"
+          "current_key": "AIzaSyC6jzqDGxRnPJXwozS0WLgC2z5iLfy2yeg"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "382131013049-6dssr87gp9etk7a12dlghcmhovcdrsjb.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

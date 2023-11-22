@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/CircularStd-Black.ttf",
+      "sha1": "b28281624afe633b6f5c368e93cdee2a2d6fdd74"
+    },
+    {
+      "path": "src/assets/fonts/CircularStd-BlackItalic.ttf",
+      "sha1": "f6f05268a8a1d5a3ae0352e02abd8cc14962fdda"
+    },
+    {
+      "path": "src/assets/fonts/CircularStd-Bold.ttf",
+      "sha1": "879abb2579e83ab43c09aad8fa78f2d614ace077"
+    },
+    {
+      "path": "src/assets/fonts/CircularStd-BoldItalic.ttf",
+      "sha1": "54c57cf3d367645b6094154718beb59f448d1220"
+    },
+    {
+      "path": "src/assets/fonts/CircularStd-Book.ttf",
+      "sha1": "e41d5d04155f6233cdec9176a8a7eb3e0cd2b70a"
+    },
+    {
+      "path": "src/assets/fonts/CircularStd-BookItalic.ttf",
+      "sha1": "7052714ec71a5450b6a9a4f77f77d8bdbeb43f3d"
+    },
+    {
+      "path": "src/assets/fonts/CircularStd-Medium.ttf",
+      "sha1": "262e6e5742420716834bb6584a03e8310690e041"
+    },
+    {
+      "path": "src/assets/fonts/CircularStd-MediumItalic.ttf",
+      "sha1": "144f9d100e2d7b85df57f36463cfc05915a8de9b"
+    }
+  ]
+}

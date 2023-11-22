@@ -74,9 +74,9 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     // namespace "com.wotnot.wotnot"
-    namespace "com.wotnot.wotnot"
+    namespace "com.zamerat.zamerat"
     defaultConfig {
-        applicationId "com.wotnot.wotnot"
+        applicationId "com.zamerat.zamerat"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 7

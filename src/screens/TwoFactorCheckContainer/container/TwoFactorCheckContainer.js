@@ -137,7 +137,7 @@ class TwoFactorCheckContainer extends Component {
           recoveryCodeBtnPress={this.recoveryCodeBtnPress}
           tittle={strings('login.2FA_TOTP_SCREEN_HEADING')}
           tittle2={strings('login.2FA_TOTP_SCREEN_SUB_HEADING', {
-            ORGANISATION_NAME: 'WotNot',
+            ORGANISATION_NAME: 'Zamerat Chat',
           })}
           inputLabel={strings('login.2FA_TOTP_SCREEN_CODE_INPUT')}
           btnLabel={strings('button.RECOVERY_SCREEN_VERIFY_BTN_TEXT')}

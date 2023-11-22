@@ -39,7 +39,7 @@ const ForgotPasswordComponent = ({
         <Spacing size="xs" />
         <Text type={'body1'} textAlign={'center'}>
           {strings('login.FORGOT_PASSWORD_DESCRIPTION', {
-            ORGANISATION_NAME: 'WotNot',
+            ORGANISATION_NAME: 'Zamerat Chat',
           })}
         </Text>
       </View>

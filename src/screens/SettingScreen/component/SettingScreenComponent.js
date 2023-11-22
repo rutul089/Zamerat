@@ -144,12 +144,12 @@ const SettingScreenComponent = ({
           text={strings('settings.NOTIFICATION_HEADER')}
           onPress={onNotificationClick}
         />
-        <Spacing size="md" />
+        {/* <Spacing size="md" />
         <RenderRowItem
           text={strings('settings.HELP_DESK')}
           onPress={onHelpDeskClick}
         />
-        <Spacing size="md" />
+        <Spacing size="md" /> */}
         <RenderRowItem
           text={strings('settings.LOGOUT')}
           color={theme.colors.typography.error}
@@ -288,9 +288,9 @@ const SettingScreenComponent = ({
         onClose={onClose}>
         <AlertDialog.Content>
           <AlertDialog.CloseButton />
-          <AlertDialog.Header>WotNot</AlertDialog.Header>
+          <AlertDialog.Header>Zamerat</AlertDialog.Header>
           <AlertDialog.Body>
-            Are you sure, you want to logout from the WotNot app?
+            Are you sure, you want to logout from the Zamerat app?
           </AlertDialog.Body>
           <AlertDialog.Footer>
             <Button.Group space={2}>

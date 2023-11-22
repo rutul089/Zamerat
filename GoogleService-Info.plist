@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBpii4BYTex32rj3KpzxJ56BLURInuExUQ</string>
+	<string>AIzaSyBV7rVKY5C_X2r_JLRMadtMl33bQ1D3ySc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>382131013049</string>
+	<string>249728388261</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.wotnot.wotnot</string>
+	<string>com.zamerat.zamerat</string>
 	<key>PROJECT_ID</key>
-	<string>wotnot-production</string>
+	<string>zamerat-chat</string>
 	<key>STORAGE_BUCKET</key>
-	<string>wotnot-production.appspot.com</string>
+	<string>zamerat-chat.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:382131013049:ios:2ac28fc57932ebb2012268</string>
+	<string>1:249728388261:ios:a572b57ebc1cafa02c914c</string>
 </dict>
 </plist>

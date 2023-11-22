@@ -1,11 +1,10 @@
 import {Method} from './src/apiService';
 
-
 export const apiConfig = {
-  productionBaseURL: 'https://app.wotnot.io' /*release build*/,
-  testingBaseURL: 'https://app.wotnot.io' /*inteneal testing*/,
-  developmentBaseURL: 'https://app.wotnot.io' /*for client test*/,
-  alphaBaseURL: 'https://app.wotnot.io',
+  productionBaseURL: 'https://chat.zamerat.com' /*release build*/,
+  testingBaseURL: 'https://chat.zamerat.com' /*inteneal testing*/,
+  developmentBaseURL: 'https://chat.zamerat.com' /*for client test*/,
+  alphaBaseURL: 'https://chat.zamerat.com',
 };
 
 export const endPoints = {
@@ -37,7 +36,7 @@ export const endPoints = {
       method: Method.POST,
     };
   },
-  fetchSavedReply: (account_id, from, limit,query) => {
+  fetchSavedReply: (account_id, from, limit, query) => {
     return {
       endpoint: `/v1/account/${account_id}/saved-replies?&from=${from}&limit=${limit}&sort_type=desc&sort_by=frequency&query=${query}`,
       // endpoint: `/v1/account/${account_id}/saved-replies?&sort_type=desc&sort_by=frequency`,
@@ -174,7 +173,7 @@ export const endPoints = {
     endpoint: '/v1/user',
     method: Method.PUT,
   },
-  fetchSavedReplySearch: (account_id,query) => {
+  fetchSavedReplySearch: (account_id, query) => {
     return {
       // endpoint: `/v1/account/${account_id}/saved-replies?&from=${from}&limit=${limit}&sort_type=desc&sort_by=frequency&query=${query}`,
       endpoint: `/v1/account/${account_id}/saved-replies?query=${query}&sort_type=desc&sort_by=frequency`,
@@ -183,22 +182,14 @@ export const endPoints = {
   },
 };
 
-
-
-// export const WebSocketURL= "ws.wotnot.io/?user_type=agent" // PROD
+// export const WebSocketURL= "ws.chat.zamerat.com/?user_type=agent" // PROD
 // export const WebSocketURL = "ws.test.wotnot.io/?user_type=agent" // TEST
 export const WebSocketURL =
-  'wss://ws.dev.wotnot.io/socket.io/?user_type=agent&EIO=4&transport=websocket'; //DEV
-
-// Production: https://ws.wotnot.io/?user_type=agent
-// Staging: https://ws.test.wotnot.io/?user_type=agent
-// Development: https://ws.dev.wotnot.io/?user_type=agent
-
-// wss://ws.dev.wotnot.io/socket.io/?user_type=agent
+  'wss://ws.chat.zamerat.com/socket.io?user_type=agent&EIO=4&transport=websocket'; //DEV
 
 export const SOCKET_BASEURL = {
-  PRODUCTION: 'https://ws.wotnot.io/?user_type=agent' /*release build*/,
-  TESTING: 'https://ws.test.wotnot.io/?user_type=agent' /*inteneal testing*/,
-  DEVELOPMENT: 'https://ws.wotnot.io/?user_type=agent' /*for client test*/,
-  ALPHA: 'https://ws.test.wotnot.io/?user_type=agent',
+  PRODUCTION: 'wss://ws.chat.zamerat.com/?user_type=agent' /*release build*/,
+  TESTING: 'wss://ws.chat.zamerat.com/?user_type=agent' /*inteneal testing*/,
+  DEVELOPMENT: 'wss://ws.chat.zamerat.com/?user_type=agent' /*for client test*/,
+  ALPHA: 'wss://ws.chat.zamerat.com/?user_type=agent',
 };
