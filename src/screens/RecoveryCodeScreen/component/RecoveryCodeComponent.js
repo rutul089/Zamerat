@@ -40,7 +40,7 @@ const TwoFactorCheckComponent = ({
         <Spacing size="xs" />
         <Text type={'body1'} textAlign={'center'}>
           {strings('login.2FA_TOTP_SCREEN_SUB_HEADING', {
-            ORGANISATION_NAME: 'Zamerat Chat',
+            ORGANISATION_NAME: strings('orgName'),
           })}
         </Text>
         <Spacing size="xl2" />

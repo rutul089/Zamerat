@@ -1,5 +1,5 @@
 export default {
-  ic_wotnot_logo: require('./ic_wotnot_logo.png'),
+  ic_wotnot_logo: require('../../../assets/images/ic_wotnot_logo.png'),
   ic_back: require('./ic_back.png'),
   ic_attach: require('./ic_attach.png'),
   ic_calendar: require('./ic_calendar.png'),

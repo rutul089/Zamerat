@@ -193,3 +193,6 @@ export const SOCKET_BASEURL = {
   DEVELOPMENT: 'wss://ws.chat.zamerat.com/?user_type=agent' /*for client test*/,
   ALPHA: 'wss://ws.chat.zamerat.com/?user_type=agent',
 };
+
+// email: 'wotnot.testing.qa@gmail.com',
+// password: 'WotNotTesting@1',

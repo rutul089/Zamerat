@@ -1,16 +1,16 @@
-import React, {forwardRef, useEffect} from 'react';
+import React, { forwardRef, useEffect } from 'react';
 import {
+  ActivityIndicator,
   FlatList,
   Image,
+  Keyboard,
+  KeyboardAvoidingView,
+  Platform,
+  SafeAreaView,
+  ScrollView,
   TextInput,
   TouchableOpacity,
   View,
-  SafeAreaView,
-  ScrollView,
-  Platform,
-  ActivityIndicator,
-  KeyboardAvoidingView,
-  Keyboard,
 } from 'react-native';
 import images from '../../../assets/images';
 import {
@@ -18,45 +18,42 @@ import {
   BottomSheet,
   FlexContainer,
   Header,
-  Text,
-  Loader,
-  Input,
   ImageViewer,
+  Input,
+  Loader,
+  Text,
 } from '../../../components';
+import Modal from '../../../components/CustomModal/index';
 import Spacing from '../../../components/Spacing';
-import {strings} from '../../../locales/i18n';
-import theme from '../../../util/theme';
-import colors from '../../../util/theme/colors';
-import styles from '../Style';
-import ButtonTeammate from './ButtonTeammate';
-import AssigneeItem from './AssigneeItem';
-import {CONVERSATION} from '../../../constants/global';
+import { CONVERSATION } from '../../../constants/global';
+import { strings } from '../../../locales/i18n';
 import {
   getAgentDetails,
   getChatMsgType,
   getFormChatItemWithResponse,
   userFileResponseElement,
 } from '../../../util/ChatHistoryHelper';
-import ChatDateStampLabel from './ChatComponent/ChatDateStampLabel';
-import ChatText from './ChatComponent/ChatText';
-import ChatImg from './ChatComponent/ChatImg';
-import ChatFileBlock from './ChatComponent/ChatFileBlock';
-import ChatFileResponse from './ChatComponent/ChatFileResponse';
-import ChatNote from './ChatComponent/ChatNote';
-import ChatSlider from './ChatComponent/ChatSlider';
-import ChatOptionsButton from './ChatComponent/ChatOptionsButton';
-import ChatCalendar from './ChatComponent/ChatCalendar';
-import ChatForm from './ChatComponent/ChatForm';
-import ChatCardView from './ChatComponent/ChatCardView';
-import ChatListView from './ChatComponent/ChatListView';
+import { getAddress } from '../../../util/ConversationListHelper';
+import { bytesToSize } from '../../../util/helper';
+import theme from '../../../util/theme';
+import { registerVisitorTypingHandler } from '../../../websocket';
+import styles from '../Style';
+import AssigneeItem from './AssigneeItem';
+import ButtonTeammate from './ButtonTeammate';
 import ChatAppointmentBooking from './ChatComponent/ChatAppointmentBooking';
-import ChatVideoView from './ChatComponent/ChatVideoView';
-import AutoGrowTextInputManager from '../../../util/AutoGrowTextInputManager';
+import ChatCalendar from './ChatComponent/ChatCalendar';
+import ChatCardView from './ChatComponent/ChatCardView';
+import ChatDateStampLabel from './ChatComponent/ChatDateStampLabel';
+import ChatFileResponse from './ChatComponent/ChatFileResponse';
+import ChatForm from './ChatComponent/ChatForm';
+import ChatImg from './ChatComponent/ChatImg';
+import ChatListView from './ChatComponent/ChatListView';
+import ChatNote from './ChatComponent/ChatNote';
+import ChatOptionsButton from './ChatComponent/ChatOptionsButton';
+import ChatSlider from './ChatComponent/ChatSlider';
+import ChatText from './ChatComponent/ChatText';
 import ChatTyping from './ChatComponent/ChatTyping';
-import {registerVisitorTypingHandler} from '../../../websocket';
-import {bytesToSize} from '../../../util/helper';
-import Modal from '../../../components/CustomModal/index';
-import {getAddress} from '../../../util/ConversationListHelper';
+import ChatVideoView from './ChatComponent/ChatVideoView';
 
 const ConversationComponent = (
   {

@@ -66,14 +66,13 @@ export default class RootContainer extends Component {
       authStatus === messaging.AuthorizationStatus.PROVISIONAL;
 
     if (enabled) {
-      // await messaging().registerDeviceForRemoteMessages();
+      await messaging().registerDeviceForRemoteMessages();
       this.getFcmToken();
     }
   }
 
   async getFcmToken() {
     const fcmToken = await messaging().getToken();
-    alert(fcmToken)
     if (fcmToken) {
       console.log('FCM Token:', fcmToken);
       AsyncStorage.setItem(LOCAL_STORAGE.NOTIFICATION_TOKEN, fcmToken);
@@ -90,10 +89,8 @@ export default class RootContainer extends Component {
     this.requestUserPermission();
     this.registerAppStateEvent();
     messaging().onMessage(async remoteMessage => {
-      console.log('remoteMessage', remoteMessage);
     });
     messaging().setBackgroundMessageHandler(async remoteMessage => {
-      console.log('remoteMessage', remoteMessage);
       // Update a users messages list using AsyncStorage
       // const currentMessages = await AsyncStorage.getItem('messages');
       // const messageArray = JSON.parse(currentMessages);
