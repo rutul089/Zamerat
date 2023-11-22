@@ -3,18 +3,18 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 import I18n from 'react-native-i18n';
 
-import en from './languages/en.json';
-import EN from './languages/en.json';
-import ar from './languages/ar.json';
-import AR from './languages/ar.json';
-import de from './languages/de.json';
-import DE from './languages/de.json';
-import es from './languages/es.json';
-import ES from './languages/es.json';
-import fr from './languages/fr.json';
-import FR from './languages/fr.json';
-import pt from './languages/pt.json';
-import PT from './languages/pt.json';
+import en from '../../languages/en.json';
+import EN from '../../languages/en.json';
+import ar from '../../languages/ar.json';
+import AR from '../../languages/ar.json';
+import de from '../../languages/de.json';
+import DE from '../../languages/de.json';
+import es from '../../languages/es.json';
+import ES from '../../languages/es.json';
+import fr from '../../languages/fr.json';
+import FR from '../../languages/fr.json';
+import pt from '../../languages/pt.json';
+import PT from '../../languages/pt.json';
 
 import {LOCAL_STORAGE} from '../constants/storage';
 

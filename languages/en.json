@@ -1,5 +1,6 @@
 {
   "appName": "Zamerat",
+  "orgName":"Zamerat Chat",
   "login": {
     "WELCOME_BACK_MSG": "Welcome back",
     "SIGN_IN_WELCOME_SUB_TEXT": "Sign in and build some cool bots",
